@@ -1,0 +1,102 @@
+#dDetalle{
+    height: 80%;
+    margin: 10% 0;
+    border: 1px solid lightgrey;
+    position: relative;
+     #alq {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        img {
+          width: 100%;
+        }
+      } 
+}   
+.iDetalle{
+    height: 40%;
+    width: 100%;
+    // border: solid red;
+    background-image: url('/assets/img/casa_default.jpg');
+    background-size: cover;
+    background-position: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#nomPrecDet{
+    height: 30%;
+    width: 100%;
+    // border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    #detNoP{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .infoDet{
+        width: 100%;
+        margin: 0;
+        padding:10px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    p:first-of-type{
+        
+        border-bottom: 1px solid lightgrey;
+        border-top: 1px solid lightgrey;
+    }
+    #a1{
+        font-weight: 400;
+        font-family: "Lobster Two", cursives;
+    }
+    #a2{
+        font-weight: bold;
+    }
+   
+    span{
+        margin: 5px 30px;
+        font-size: 1.8em;
+        i{
+            font-size: 0.8em;
+        }
+    }
+
+    .clearfix{
+        clear:both;
+    }
+}
+
+#servicios{
+    padding: 15px;
+    height: 30%;    
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+    &>span{
+        text-align: center;
+        width: 50%;
+        margin-bottom: 10px;
+        .green{
+            color: green;
+        }
+        .red{
+            color: red;
+        }
+    }
+
+}

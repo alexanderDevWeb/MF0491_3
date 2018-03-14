@@ -1,0 +1,7 @@
+<div id="wrapper">
+  <h2>Id de la tarea a consultar</h2>
+  <input id="input1" type="ext" [(ngModel)]="idTarea">
+  <button (click)="buscarTarea()">Consultar</button>
+  <span [className]="correcto ? 'verde': 'rojo'">{{respuesta}}</span>
+  <span>{{listado}}</span>
+</div>

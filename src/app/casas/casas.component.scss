@@ -1,0 +1,137 @@
+.col-xs-6 {
+  padding: 0;
+}
+
+.row{
+  margin: 0;
+}
+
+#rowWrap {
+  height: 100vh;
+}
+
+
+#filtros {
+  border: 1px solid lightgrey;
+  height: 22%;
+  padding: 15px 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  font-size: 1.5em;
+  #buscador{
+    width: 100%;
+    input:first-child {
+      width: 100%;
+    }
+  }
+  #iAlqVen {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    label {
+      margin-right: 5px;
+    }
+    input{
+        vertical-align: baseline;
+    }
+  }
+
+  #iPrecio {
+    width: 100%;
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-around;
+    #iMin {
+      width: 100px;
+    }
+    #iMax {
+      width: 100px;
+    }
+  }
+}
+
+#colGaleria {
+  padding: 20px;
+  height: 100%;
+  overflow: auto;
+  border-right: 2px solid lightgrey;
+}
+
+#galeria {
+  height: 78%;
+  display: flex;
+  justify-content: space-around;
+  // align-items: flex-start;
+  // align-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  overflow: auto;
+}
+
+.dTarjeta {
+  width: 40%;
+  height: 200px;
+  display: inline-block;
+  border: 2px solid lightgrey;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  .iCasa {
+    height: 70%;
+    width: 100%;
+    // border: solid red;
+    display: inline-block;
+    background-image: url("/assets/img/casa_default.jpg");
+    background-size: cover;
+    background-position: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .nomPrec {
+    height: 30%;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    span:first-child{
+      font-family: "Lobster Two", cursives;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+/* Casa seleccionada */
+.seleccionado {
+  -webkit-box-shadow: 0px 0px 19px 6px rgba(164, 176, 167, 1);
+  -moz-box-shadow: 0px 0px 19px 6px rgba(164, 176, 167, 1);
+  box-shadow: 0px 0px 19px 6px rgba(164, 176, 167, 1);
+  border: none;
+}
+
+// #ingTarjeta{
+//     width: 49%;
+//     height: 50%;
+//     // border: solid blue;
+//     display: inline-flex;
+//     align-items: center;
+//     vertical-align: top;
+//     font-size: 1.6em;
+//     ul{
+//         list-style: none;
+//         font-weight: bold;
+//         text-transform: capitalize;
+//     }
+// }
+
+#colDetalle {
+  height: 100%;
+  padding: 10px;
+}
