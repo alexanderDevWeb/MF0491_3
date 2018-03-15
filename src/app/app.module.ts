@@ -15,6 +15,7 @@ import { CasasComponent } from './casas/casas.component';
 import { CasasService } from './providers/casas.service';
 import { FilterCasaPipe } from './pipes/filterCasa.pipe';
 import { DetalleComponent } from './casas/detalle/detalle.component';
+import { FormularioComponent } from './casas/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetalleComponent } from './casas/detalle/detalle.component';
     FormBasicoComponent,
     CasasComponent,
     FilterCasaPipe,
-    DetalleComponent
+    DetalleComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

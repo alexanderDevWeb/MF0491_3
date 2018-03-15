@@ -1,0 +1,32 @@
+#addCasa{
+    border-radius: 50%;
+    border-image: none;
+    background-image: none;
+    border: none;
+    background-color: green;
+}
+
+input:not([type='radio']), .form-group.form-inline textarea{
+    width: 100%;
+}
+
+input[type="radio"]{
+   vertical-align: top;
+}
+
+img{
+    width: 100%;
+}
+
+#imgPrev{
+    min-height: 150px;
+    margin-bottom: 20px;
+    background-image: url('/assets/img/casa_default.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+input.ingrediente-input{
+    width: initial;
+    margin-bottom: 10px;
+}

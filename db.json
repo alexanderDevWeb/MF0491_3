@@ -18,6 +18,7 @@
   },
   "casas": [
     {
+      "id": 1,
       "nombre": "Pazo oubiño",
       "precio": 500000,
       "alquiler": false,
@@ -25,13 +26,26 @@
       "foto": "https://www.hola.com/imagenes/actualidad/20180216120517/familia-franco-pone-venta-pazo-meiras/0-539-996/pazo-meiras-t.jpg",
       "direccion": "Calle la felicidad, n4 Vigo - 48657",
       "servicios": [
-        { "nombre": "tv","disponible": false },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": true },
-        { "nombre": "cocina","disponible": false }      
+        {
+          "nombre": "tv",
+          "disponible": false
+        },
+        {
+          "nombre": "wc",
+          "disponible": true
+        },
+        {
+          "nombre": "jardin",
+          "disponible": true
+        },
+        {
+          "nombre": "cocina",
+          "disponible": false
+        }
       ]
     },
     {
+      "id": 2,
       "nombre": "Santutxu",
       "precio": 600,
       "alquiler": true,
@@ -39,13 +53,26 @@
       "foto": "https://d.inmofactory.com/1/98366/13970473/165256531.jpg/300x225/a_fill/",
       "direccion": "Mazustegi 9, Bilbao - 4800",
       "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": false },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": true }      
+        {
+          "nombre": "tv",
+          "disponible": true
+        },
+        {
+          "nombre": "wc",
+          "disponible": false
+        },
+        {
+          "nombre": "jardin",
+          "disponible": false
+        },
+        {
+          "nombre": "cocina",
+          "disponible": true
+        }
       ]
     },
     {
+      "id": 3,
       "nombre": "Autonomia",
       "precio": 700,
       "alquiler": true,
@@ -53,13 +80,26 @@
       "foto": "https://cdn.pixabay.com/photo/2017/12/21/20/43/biltmore-house-3032522_960_720.jpg",
       "direccion": "afsdf 9, Bilbao - 4800",
       "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": true }      
+        {
+          "nombre": "tv",
+          "disponible": true
+        },
+        {
+          "nombre": "wc",
+          "disponible": true
+        },
+        {
+          "nombre": "jardin",
+          "disponible": false
+        },
+        {
+          "nombre": "cocina",
+          "disponible": true
+        }
       ]
     },
     {
+      "id": 4,
       "nombre": "Cortes",
       "precio": 500,
       "alquiler": true,
@@ -67,95 +107,104 @@
       "foto": "https://cdn.pixabay.com/photo/2018/03/06/16/36/winter-3203882_960_720.jpg",
       "direccion": "346wrger bao - 4800",
       "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": false }      
+        {
+          "nombre": "tv",
+          "disponible": true
+        },
+        {
+          "nombre": "wc",
+          "disponible": true
+        },
+        {
+          "nombre": "jardin",
+          "disponible": false
+        },
+        {
+          "nombre": "cocina",
+          "disponible": false
+        }
       ]
     },
     {
-      "nombre": "Autonomia",
-      "precio": 700,
-      "alquiler": true,
-      "habitaciones": 3,
-      "foto": "https://cdn.pixabay.com/photo/2017/12/21/20/43/biltmore-house-3032522_960_720.jpg",
-      "direccion": "afsdf 9, Bilbao - 4800",
+      "nombre": "algoasdf",
+      "precio": 1,
+      "alquiler": 1,
+      "habitaciones": 1,
+      "foto": "/assets/img/casa_default.jpg",
+      "direccion": "asdf",
       "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": true }      
-      ]
+        {
+          "nombre": "tv",
+          "disponible": false
+        },
+        {
+          "nombre": "wc",
+          "disponible": false
+        },
+        {
+          "nombre": "jardin",
+          "disponible": false
+        },
+        {
+          "nombre": "cocina",
+          "disponible": false
+        }
+      ],
+      "id": 5
     },
     {
-      "nombre": "Cortes",
-      "precio": 500,
-      "alquiler": true,
-      "habitaciones": 5,
-      "foto": "https://cdn.pixabay.com/photo/2018/03/06/16/36/winter-3203882_960_720.jpg",
-      "direccion": "346wrger bao - 4800",
+      "nombre": "algoasdf",
+      "precio": 0,
+      "alquiler": 0,
+      "habitaciones": 0,
+      "foto": "/assets/img/casa_default.jpg",
+      "direccion": "asdf",
       "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": false }      
-      ]
+        {
+          "nombre": "tv",
+          "disponible": false
+        },
+        {
+          "nombre": "wc",
+          "disponible": false
+        },
+        {
+          "nombre": "jardin",
+          "disponible": false
+        },
+        {
+          "nombre": "cocina",
+          "disponible": false
+        }
+      ],
+      "id": 6
     },
     {
-      "nombre": "Autonomia",
-      "precio": 700,
-      "alquiler": true,
-      "habitaciones": 3,
-      "foto": "https://cdn.pixabay.com/photo/2017/12/21/20/43/biltmore-house-3032522_960_720.jpg",
-      "direccion": "afsdf 9, Bilbao - 4800",
+      "nombre": "algoasdf",
+      "precio": 1,
+      "alquiler": 1,
+      "habitaciones": 1,
+      "foto": "/assets/img/casa_default.jpg",
+      "direccion": "asdf",
       "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": true }      
-      ]
-    },
-    {
-      "nombre": "Cortes",
-      "precio": 500,
-      "alquiler": true,
-      "habitaciones": 5,
-      "foto": "https://cdn.pixabay.com/photo/2018/03/06/16/36/winter-3203882_960_720.jpg",
-      "direccion": "346wrger bao - 4800",
-      "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": false }      
-      ]
-    },
-    {
-      "nombre": "Autonomia",
-      "precio": 700,
-      "alquiler": true,
-      "habitaciones": 3,
-      "foto": "https://cdn.pixabay.com/photo/2017/12/21/20/43/biltmore-house-3032522_960_720.jpg",
-      "direccion": "afsdf 9, Bilbao - 4800",
-      "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": true }      
-      ]
-    },
-    {
-      "nombre": "Cortes",
-      "precio": 500,
-      "alquiler": true,
-      "habitaciones": 5,
-      "foto": "https://cdn.pixabay.com/photo/2018/03/06/16/36/winter-3203882_960_720.jpg",
-      "direccion": "346wrger bao - 4800",
-      "servicios": [
-        { "nombre": "tv","disponible": true },
-        { "nombre": "wc","disponible": true },
-        { "nombre": "jardin","disponible": false },
-        { "nombre": "cocina","disponible": false }      
-      ]
+        {
+          "nombre": "tv",
+          "disponible": false
+        },
+        {
+          "nombre": "wc",
+          "disponible": false
+        },
+        {
+          "nombre": "jardin",
+          "disponible": false
+        },
+        {
+          "nombre": "cocina",
+          "disponible": false
+        }
+      ],
+      "id": 7
     }
   ]
 }

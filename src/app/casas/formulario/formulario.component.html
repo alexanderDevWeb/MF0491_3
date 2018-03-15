@@ -1,0 +1,86 @@
+<!-- Button trigger modal -->
+<button type="button" id="addCasa" class="btn btn-success" data-toggle="modal" data-target="#modalCasa">
+  <i class="fa fa-plus"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCasa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span id="aspa" aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Nueva Casa</h4>
+      </div>
+      <div class="modal-body">
+        <p>Valores: {{formulario.value | json}}</p>
+        <p>Estado: {{formulario.status}}</p>
+        <form [formGroup]="formulario" (ngSubmit)="submitar($event)" novalidate>
+          <div class="row">
+            <div class="col-xs-6">
+              <div [ngClass]="estilosInput(formulario.controls.nombre)" class="form-group form-inline">
+                <label for="nombre" class="control-label">Nombre: </label>
+                <input id="nombre" name="nombre" formControlName="nombre" class="form-control">
+                <p *ngIf="formulario.controls.nombre.invalid && formulario.controls.nombre.touched" class="text-danger">*Obligatorio, mínimo 2 letras</p>
+              </div>
+
+              <div [ngClass]="estilosInput(formulario.controls.precio)" class="form-group form-inline">
+                <label for="precio" class="control-label">Precio: </label>
+                <input id="precio" type="number" min="0" name="precio" formControlName="precio" class="form-control">
+                <!-- <p *ngIf="formulario.controls.cocinero.invalid && formulario.controls.cocinero.touched" class="text-danger">*Obligatorio, mínimo 2 letras</p> -->
+              </div>
+
+              <div class="form-group form-inline">
+                <!-- <label for="gluten">Sin Gluten: </label> -->
+                <input type="radio" name="alquiler" formControlName="alquiler" value="si"> Alquiler
+                <input type="radio" name="alquiler" formControlName="alquiler" value="no"> Venta
+                <!-- <p *ngIf="formulario.controls.cocinero.invalid && formulario.controls.cocinero.touched" class="text-danger">*Obligatorio, mínimo 2 letras</p> -->
+              </div>
+
+              <div [ngClass]="estilosInput(formulario.controls.habitaciones)" class="form-group form-inline">
+                <label for="habitaciones" class="control-label">Habitaciones: </label>
+                <input id="habitaciones" type="number" name="habitaciones" formControlName="habitaciones" class="form-control">
+                <!-- <p *ngIf="formulario.controls.cocinero.invalid && formulario.controls.cocinero.touched" class="text-danger">*Obligatorio, mínimo 2 letras</p> -->
+              </div>
+
+              <div [ngClass]="estilosInput(formulario.controls.direccion)" class="form-group form-inline">
+                <label for="direccion" class="control-label">Dirección: </label>
+                <input id="direccion" name="direccion" formControlName="direccion" class="form-control">
+                <p *ngIf="formulario.controls.direccion.invalid && formulario.controls.direccion.touched" class="text-danger">*Obligatorio, mínimo 2 letras</p>
+              </div>
+
+              
+            </div>
+            <div class="col-xs-6">
+              <div id="imgPrev">
+                <img src="{{formulario.value.foto}}" alt="">
+              </div>
+              <div class="form-group form-inline">
+                <label for="foto" class="control-label">Foto: </label>
+                <input id="foto" name="foto" formControlName="foto" class="form-control">
+                <!-- <p *ngIf="formulario.controls.cocinero.invalid && formulario.controls.cocinero.touched" class="text-danger">*Obligatorio, mínimo 2 letras</p> -->
+              </div>
+             <!--  <label for="">Ingredientes </label>
+              <a (click)="clickOtroIngrediente()">Añadir Ingrediente</a>
+              <div formArrayName="ingredientes" *ngFor="let ingrediente of formulario.get('ingredientes').controls; let i = index;">
+                 -->
+                 <!-- FormGroupName porque no tiene un nombre definido. Se pone al vuelo con "i" -->
+                <!-- <div [formGroupName]="i">
+                  <input formControlName="nombre" placeholder="Nuevo Ingrediente" class="ingrediente-input">
+                  <span class="glyphicon glyphicon-remove-circle" (click)="clickEliminarIngrediente(i)"></span>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- row-->
+
+
+          <input type="submit" [disabled]="!formulario.valid" class='btn btn-success btn-block' value="Crear">
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

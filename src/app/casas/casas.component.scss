@@ -1,25 +1,30 @@
+app-formulario{
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  // z-index: 1;
+}
+
 .col-xs-6 {
   padding: 0;
 }
 
-.row{
-  margin: 0;
-}
-
 #rowWrap {
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 99vh;
 }
 
 
 #filtros {
   border: 1px solid lightgrey;
-  height: 22%;
+  height: 20%;
   padding: 15px 5px;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
-  font-size: 1.5em;
+  font-size: 1.3em;
   #buscador{
     width: 100%;
     input:first-child {
@@ -55,7 +60,7 @@
 #colGaleria {
   padding: 20px;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   border-right: 2px solid lightgrey;
 }
 
@@ -66,8 +71,9 @@
   // align-items: flex-start;
   // align-content: space-around;
   flex-wrap: wrap;
-  padding: 10px;
+  padding:  20px 10px;
   overflow: auto;
+  border: 1px solid lightgrey;
 }
 
 .dTarjeta {
@@ -116,22 +122,9 @@
   border: none;
 }
 
-// #ingTarjeta{
-//     width: 49%;
-//     height: 50%;
-//     // border: solid blue;
-//     display: inline-flex;
-//     align-items: center;
-//     vertical-align: top;
-//     font-size: 1.6em;
-//     ul{
-//         list-style: none;
-//         font-weight: bold;
-//         text-transform: capitalize;
-//     }
-// }
 
 #colDetalle {
   height: 100%;
   padding: 10px;
+  background-color: #00000042;
 }

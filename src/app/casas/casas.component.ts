@@ -89,4 +89,8 @@ export class CasasComponent implements OnInit {
       this.alq = false;
     }
   }
+
+  recargar(e) {
+    this.aCasas.unshift(e.casaAnadida);
+  }
 }

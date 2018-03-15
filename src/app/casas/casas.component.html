@@ -1,3 +1,4 @@
+
 <div class="row" id="rowWrap">
   <div class="col-xs-6" id="colGaleria">
     <div class="col-xs-12" id="filtros">
@@ -13,6 +14,7 @@
           <input [(ngModel)]="minPrec" type="number" min="0" id="iMin" placeholder="Minimo">
           <input [(ngModel)]="maxPrec" type="number" min="0" id="iMax" placeholder="Maximo">
         </div>
+        <app-formulario  (casaAnadida)="recargar($event)"></app-formulario>
       </div>
 
     <div id="galeria">      
