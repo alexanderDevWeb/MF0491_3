@@ -8,14 +8,6 @@ export class Producto {
   oferta: boolean;
   foto: string;
 
-
-  /* Constructor por defecto.
-    nombre: string,
-    precio: number,
-    precioBruto: number,
-    precioOferta: number,
-    oferta: boolean,
-    foto: string */
   constructor() {
     console.log('Producto Constructor');
 

@@ -1,9 +1,9 @@
 nav {
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 1;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
   height: 50px;
   display: flex;
   justify-content: flex-end;
@@ -19,33 +19,32 @@ nav {
   }
 
   #resumen {
-      position: relative;
+    position: relative;
     width: 20%;
     align-self: stretch;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(84, 206, 79);
-    .badge{
-        position: relative;
-        left:-5px;
-        bottom: 8px;
-        z-index: 2;
-        background-color: rgb(216, 104, 104);
+    .badge {
+      position: relative;
+      left: -5px;
+      bottom: 8px;
+      z-index: 2;
+      background-color: rgb(216, 104, 104);
     }
-    #toggle{
-        margin-left: 20px;
-        &:hover{
-            cursor:pointer;
-        }
+    #toggle {
+      margin-left: 20px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
-  
 }
 
 /* Detalle de los productos */
 .dTarjeta {
-    position: relative;
+  position: relative;
   width: 15%;
   height: 300px;
   display: inline-block;
@@ -54,18 +53,18 @@ nav {
   margin-left: calc(25% / 6);
   transition: all 0.3s;
   text-align: center;
-  .descuento{
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      width: 40px;
-      height: 40px;
-      background-color: rgb(221, 72, 72);
-      border-radius: 50%;
-      border: 2px solid white;
-      color:white;
-      line-height: 40px;
-      vertical-align: middle;   
+  .descuento {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 72, 72);
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    line-height: 40px;
+    vertical-align: middle;
   }
   .iProducto {
     height: 40%;
@@ -93,10 +92,10 @@ nav {
     .precio {
       //   height: 10%;
       width: 100%;
-      .precioOferta{
-          color: rgb(221, 72, 72);
+      .precioOferta {
+        color: rgb(221, 72, 72);
       }
-      span.tachado{
+      span.tachado {
         text-decoration: line-through;
       }
     }
@@ -119,31 +118,25 @@ nav {
     justify-content: center;
     align-items: center;
     .botonera {
-        // padding: 5px;
-        background-color: lightgrey;
-        border-radius: 5px;
-        font-size: 1.2em;
-        font-weight: bold;
-        // display: flex;
-        // justify-content: space-around;
-        span {
-            padding: 10px;
-            height: 80%;
-            margin: 0px;
-            &:hover{
-                cursor: pointer;
-            }
+      // padding: 5px;
+      background-color: lightgrey;
+      border-radius: 5px;
+      font-size: 1.2em;
+      font-weight: bold;
+      // display: flex;
+      // justify-content: space-around;
+      span {
+        padding: 10px;
+        height: 80%;
+        margin: 0px;
+        &:hover {
+          cursor: pointer;
         }
+      }
 
-        span:nth-child(2){
-            background-color: #fff;
-        }
-    //   span:first-child{
-    // }
-    // span:last-child{
-    //     border-radius: 0 50% 50% 0;
-          
-    // }
+      span:nth-child(2) {
+        background-color: #fff;
+      }
     }
   }
   .anadir {
@@ -153,11 +146,11 @@ nav {
     height: 15%;
     background-color: rgb(84, 206, 79);
     color: white;
-    &:hover{
-        cursor: pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
- /*  &:hover {
+  /*  &:hover {
     cursor: pointer;
   } */
 }

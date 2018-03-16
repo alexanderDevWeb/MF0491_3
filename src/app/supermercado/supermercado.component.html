@@ -11,15 +11,8 @@
   </div>
 </nav>
 
-<!-- <p>PRODUCTOS</p> -->
-<!-- <p *ngFor="let producto of stock">{{producto | json}}</p> -->
-
 <!-- Casa una d elas tarjetas -->
 <div class="dTarjeta" *ngFor="let producto of stock | filterProductos: searchText">
-<!-- <div *ngFor="let casa of aCasas | filterCasa: searchText :alq :vent :minPrec :maxPrec" class="dTarjeta"  [class.seleccionado]="casa == seleccion" (click)="seleccionarCasa(casa)"> -->
-    <!-- <div id="gluten">
-        <img [src]="(!recetaSel.isGlutenFree) ? 'assets/img/gluten-red.png' : 'assets/img/gluten-green.png'" alt="">
-      </div> -->
     <div *ngIf="producto.oferta" class="descuento">
       {{producto.porcentajeOferta}} %
     </div>

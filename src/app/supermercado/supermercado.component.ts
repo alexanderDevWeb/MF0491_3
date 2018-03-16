@@ -24,6 +24,7 @@ export class SupermercadoComponent implements OnInit {
   // El total de la compra
   total: number;
 
+  // Controla que se muestre el carrito o no
   mostrar: boolean;
 
   constructor(private productosService: ProductosService) {
@@ -68,12 +69,9 @@ export class SupermercadoComponent implements OnInit {
         if ( !el.producto.oferta ) {
           tot += el.producto.precio * el.cantidad;
         } else {
-          // tot += el.producto.precio * el.cantidad;
           tot += (el.producto.precio - ((el.producto.precio * el.producto.porcentajeOferta) / 100)) * el.cantidad;
         }
-
       });
-
       this.total = Math.floor(tot * 100) / 100;
   }
 
