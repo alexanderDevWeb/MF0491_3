@@ -1,3 +1,35 @@
-<p>
-  carrito works!
-</p>
+<div id="carrito">
+  <div id="listado">
+    <div class="item" *ngFor="let linea of carrito">
+      <span class="linFoto">
+        <img src="{{linea.producto.foto}}" alt="">
+      </span>
+      <span class="linPrecNomb">
+
+        <!--         <span *ngIf="!linea.producto.oferta" class="linPrec">{{linea.producto.precio}}€</span>
+        <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(producto.precio - ((producto.precio * producto.porcentajeOferta) / 100))}}€</span>
+      </span>
+ -->
+        <span  class="linPrec">{{linea.producto.precio}}€</span>
+        <!-- <span class="linPrec">{{linea.producto.precio}}€</span> -->
+        <span class="linNomb">{{linea.producto.nombre}}</span>
+        <span class="linCAnt">{{linea.cantidad}}</span>
+      </span>
+      <span class="linDel">
+        <i class="glyphicon glyphicon-trash"></i>
+      </span>
+    </div>
+  </div>
+  <div id="totales">
+    <span>Total: {{total}}</span>
+  </div>
+  <div id="botsCarrito">
+    <div id="vacCarrito" (click)="vaciarCesta()">
+      <span>Vaciar Cesta </span><i class="glyphicon glyphicon-trash"></i>
+    </div>
+    <div id="tramitarCompra">
+      Ver/Tramitar Compra
+    </div>
+
+  </div>
+</div>

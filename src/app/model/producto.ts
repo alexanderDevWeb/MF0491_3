@@ -3,7 +3,7 @@ export class Producto {
   // Atributos
   nombre: string;
   precio: number;
-  precioBruto: number;
+  precioBruto: string;
   porcentajeOferta: number;
   oferta: boolean;
   foto: string;
@@ -21,7 +21,7 @@ export class Producto {
 
     this.nombre = 'Producto Nuevo';
     this.precio = 9.99;
-    this.precioBruto = 10.00;
+    this.precioBruto = '10.00€ /Litro';
     this.porcentajeOferta = 5;
     this.oferta = false;
     this.foto = '/assets/img/producto_default.jpg';

@@ -25,7 +25,7 @@ export class ProductosService {
       producto.nombre = element.nombre,
       producto.precio = element.precio,
       producto.precioBruto = element.precioBruto,
-      producto.porcentaOferta = element.porcentaOferta,
+      producto.porcentajeOferta = element.porcentajeOferta,
       producto.oferta = element.oferta,
       producto.foto = element.foto,
 

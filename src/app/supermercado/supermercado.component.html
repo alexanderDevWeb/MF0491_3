@@ -1,7 +1,44 @@
 <header>
   <span>Supermercado</span>
-  <input type="text">
+  <input [(ngModel)]="searchText" id="busqueda" type="text">
+  <div id="resumen">
+    <span  class="glyphicon glyphicon-shopping-cart"></span>
+    <span class="badge">{{carrito.length}}</span>
+    <span>{{total}}<span  class="glyphicon glyphicon-euro"></span></span>
+
+    <span id="toggle" (click)="toggleCarrito()"><span class="glyphicon glyphicon-plus" ></span></span>
+    <app-carrito *ngIf="mostrar" [carrito]="carrito" [total]="total" (vaciar)="vaciarCarrito()"></app-carrito>
+  </div>
 </header>
 
-<p>PRODUCTOS</p>
-<p *ngFor="let producto of stock">{{producto | json}}</p>
+<!-- <p>PRODUCTOS</p> -->
+<!-- <p *ngFor="let producto of stock">{{producto | json}}</p> -->
+
+<!-- Casa una d elas tarjetas -->
+<div class="dTarjeta" *ngFor="let producto of stock | filterProductos: searchText">
+<!-- <div *ngFor="let casa of aCasas | filterCasa: searchText :alq :vent :minPrec :maxPrec" class="dTarjeta"  [class.seleccionado]="casa == seleccion" (click)="seleccionarCasa(casa)"> -->
+    <!-- <div id="gluten">
+        <img [src]="(!recetaSel.isGlutenFree) ? 'assets/img/gluten-red.png' : 'assets/img/gluten-green.png'" alt="">
+      </div> -->
+    <div *ngIf="producto.oferta" class="descuento">
+      {{producto.porcentajeOferta}} %
+    </div>
+    <div class="iProducto">
+      <img src="{{producto.foto}}" alt="">
+    </div>
+    <div class="detProd">
+      <!-- <h2>{{casa.nombre}}</h2> -->
+      <div class="precio"> <div *ngIf="producto.oferta" class="precioOferta">{{ (producto.precio - ((producto.precio * producto.porcentajeOferta) / 100)) | number : '1.2-2' }}€</div> <span  [class.tachado]="producto.oferta">{{producto.precio}} €</span></div>
+      <div class="precioBruto">({{producto.precioBruto}})</div>
+      <div class="nombreProd">{{producto.nombre}}</div>
+    </div>
+    <div class="cantidad">
+      <div class="botonera">
+        <span class="botMenos" (click)="restarCantidad($event)">-</span>
+        <span class="botCant">1</span>
+        <span class="botMas" (click)="sumarCantidad($event)">+</span>
+      </div>
+
+    </div>
+    <div class="anadir" (click)="anadirProducto($event, producto)">Añadir al carrito</div>
+</div>

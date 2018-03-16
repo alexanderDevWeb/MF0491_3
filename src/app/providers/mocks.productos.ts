@@ -3,81 +3,81 @@ export class MOCKS_PRODUCTOS {
   static stock = `[{
 		"nombre": "Whiskey Piratas del Caribe",
 		"precio": 15.95,
-		"precioBruto": 20,
+		"precioBruto": "20€/Litro",
 		"porcentajeOferta": 12,
 		"oferta": false,
-		"foto": "https://cdn.pixabay.com/photo/2017/03/17/16/54/irish-whiskey-2152126_960_720.jpg"
+		"foto": "/assets/img/whiskey.jpg"
 	},
 	{
 		"nombre": "Donuts de chocolate",
 		"precio": 2.35,
-		"precioBruto": 5.15,
+		"precioBruto": "5.15€/Kilo",
 		"porcentajeOferta": 10,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2018/01/30/13/39/donut-3118800_960_720.jpg"
+		"foto": "/assets/img/donuts.jpg"
 	},
 	{
 		"nombre": "Pechuga de Pollo",
 		"precio": 6.45,
-		"precioBruto": 4.95,
+		"precioBruto": "4.95/Kilo",
 		"porcentajeOferta": 15,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2018/03/09/17/41/chicken-3212144_960_720.jpg"
+		"foto": "/assets/img/pechugas.jpg"
 	},
 	{
 		"nombre": "Yogures desnatados",
 		"precio": 1.98,
-		"precioBruto": 3.50,
+		"precioBruto": "3.50/Kilo",
 		"porcentajeOferta": 30,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2017/12/14/02/41/yogurt-3018152_960_720.jpg"
+		"foto": "/assets/img/yogurt.jpg"
 	},
 	{
 		"nombre": "Aguacate",
 		"precio": 5.23,
-		"precioBruto": 4.85,
+		"precioBruto": "4.85/Kilo",
 		"porcentajeOferta": 5,
 		"oferta": false,
-		"foto": "https://cdn.pixabay.com/photo/2018/03/09/08/04/avocado-3210885_960_720.jpg"
+		"foto": "/assets/img/aguacate.jpg"
 	},
 	{
 		"nombre": "Risotto de hongos",
 		"precio": 3.20,
-		"precioBruto": 4.00,
+		"precioBruto": "4.00/Kilo",
 		"porcentajeOferta": 22,
 		"oferta": false,
-		"foto": "https://cdn.pixabay.com/photo/2017/01/14/00/24/rice-1978552_960_720.jpg"
+		"foto": "/assets/img/risotto.jpg"
 	},
 	{
-		"nombre": "Salmón Noruego",
+		"nombre": "Salmon Noruego",
 		"precio": 16.95,
-		"precioBruto": 11.49,
+		"precioBruto": "11.49/Kilo",
 		"porcentajeOferta": 30,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2018/02/08/12/40/salmon-3139387_960_720.jpg"
+		"foto": "/assets/img/salmon.jpg"
 	},
 	{
 		"nombre": "Mantequilla",
 		"precio": 1.15,
-		"precioBruto": 2.30,
+		"precioBruto": "2.30/Kilo",
 		"porcentajeOferta": 40,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2016/06/11/04/09/butter-1449453_960_720.jpg"
+		"foto": "/assets/img/mantequilla.jpg"
 	},
 	{
-		"nombre": "Plátano de Canarias",
+		"nombre": "Platano de Canarias",
 		"precio": 1.50,
-		"precioBruto": 1.80,
+		"precioBruto": "1.80/Kilo",
 		"porcentajeOferta": 10,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2018/01/29/22/56/banana-3117509_960_720.jpg"
+		"foto": "/assets/img/platanos.jpg"
 	},
 	{
-		"nombre": "Chuletón deTernera",
+		"nombre": "Chuleton de Ternera",
 		"precio": 21.95,
-		"precioBruto": 28.70,
+		"precioBruto": "28.70/Kilo",
 		"porcentajeOferta": 20,
 		"oferta": true,
-		"foto": "https://cdn.pixabay.com/photo/2017/03/17/16/54/irish-whiskey-2152126_960_720.jpg"
+		"foto": "/assets/img/chuleton.jpg"
 	}]`;
 }

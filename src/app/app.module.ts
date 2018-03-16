@@ -19,6 +19,7 @@ import { DetalleComponent } from './casas/detalle/detalle.component';
 import { FormularioComponent } from './casas/formulario/formulario.component';
 import { SupermercadoComponent } from './supermercado/supermercado.component';
 import { CarritoComponent } from './supermercado/carrito/carrito.component';
+import { FilterProductosPipe } from './pipes/filterProductos.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CarritoComponent } from './supermercado/carrito/carrito.component';
     FormBasicoComponent,
     CasasComponent,
     FilterCasaPipe,
+    FilterProductosPipe,
     DetalleComponent,
     FormularioComponent,
     SupermercadoComponent,
