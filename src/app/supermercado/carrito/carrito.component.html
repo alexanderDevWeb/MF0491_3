@@ -1,5 +1,6 @@
 <div id="carrito">
   <div id="listado">
+    <h1 *ngIf="!carrito">El carrito está vacío!</h1>
     <div class="item" *ngFor="let linea of carrito">
       <span class="linFoto">
         <img src="{{linea.producto.foto}}" alt="">
@@ -10,8 +11,10 @@
         <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(producto.precio - ((producto.precio * producto.porcentajeOferta) / 100))}}€</span>
       </span>
  -->
-        <span  class="linPrec">{{linea.producto.precio}}€</span>
+        <span *ngIf="!linea.producto.oferta" class="linPrec">{{linea.producto.precio}}€</span>
         <!-- <span class="linPrec">{{linea.producto.precio}}€</span> -->
+        <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(linea.producto.precio - ((linea.producto.precio * linea.producto.porcentajeOferta) / 100)) | number : '1.2-2' }}€</span>
+        
         <span class="linNomb">{{linea.producto.nombre}}</span>
         <span class="linCAnt">{{linea.cantidad}}</span>
       </span>

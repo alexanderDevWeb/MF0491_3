@@ -1,4 +1,4 @@
-<header>
+<nav>
   <span>Supermercado</span>
   <input [(ngModel)]="searchText" id="busqueda" type="text">
   <div id="resumen">
@@ -9,7 +9,7 @@
     <span id="toggle" (click)="toggleCarrito()"><span class="glyphicon glyphicon-plus" ></span></span>
     <app-carrito *ngIf="mostrar" [carrito]="carrito" [total]="total" (vaciar)="vaciarCarrito()"></app-carrito>
   </div>
-</header>
+</nav>
 
 <!-- <p>PRODUCTOS</p> -->
 <!-- <p *ngFor="let producto of stock">{{producto | json}}</p> -->

@@ -1,5 +1,7 @@
 #carrito {
   width: 500px;
+  max-height: 90vh;
+  overflow: auto;
   background-color: #fff;
   color: black;
 margin-bottom: 20px;
@@ -37,7 +39,7 @@ margin-bottom: 20px;
         font-size: 0.8em;
         .linPrec {
           font-style: italic;
-          .oferta{
+          &.oferta{
             color: rgb(221, 72, 72);
           }
         }

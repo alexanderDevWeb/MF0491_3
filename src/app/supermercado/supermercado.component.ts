@@ -69,10 +69,10 @@ export class SupermercadoComponent implements OnInit {
           tot += el.producto.precio * el.cantidad;
         } else {
           // tot += el.producto.precio * el.cantidad;
-          tot += (producto.precio - ((producto.precio * producto.porcentajeOferta) / 100)) * el.cantidad;
+          tot += (el.producto.precio - ((el.producto.precio * el.producto.porcentajeOferta) / 100)) * el.cantidad;
         }
 
-      })
+      });
 
       this.total = Math.floor(tot * 100) / 100;
   }
@@ -80,7 +80,6 @@ export class SupermercadoComponent implements OnInit {
   // Muestra u oculta el carrito
   toggleCarrito() {
     console.log('ToggleCarrito()');
-    
     this.mostrar = !this.mostrar;
   }
 
@@ -89,6 +88,6 @@ export class SupermercadoComponent implements OnInit {
     // Vacío el Carrito y fuerzo el toggle
     this.carrito = [];
     this.total = 0;
-    this.toggleCarrito()
+    this.toggleCarrito();
   }
 }
