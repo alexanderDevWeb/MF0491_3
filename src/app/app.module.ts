@@ -7,15 +7,18 @@ import { AppComponent } from './app.component';
 import { UnoComponent } from './uno/uno.component';
 
 import { ServicioService } from './providers/servicio.service';
+import { CasasService } from './providers/casas.service';
+import { ProductosService } from './providers/productos.service';
 
 // Importar HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
 import { FormBasicoComponent } from './form-basico/form-basico.component';
 import { CasasComponent } from './casas/casas.component';
-import { CasasService } from './providers/casas.service';
 import { FilterCasaPipe } from './pipes/filterCasa.pipe';
 import { DetalleComponent } from './casas/detalle/detalle.component';
 import { FormularioComponent } from './casas/formulario/formulario.component';
+import { SupermercadoComponent } from './supermercado/supermercado.component';
+import { CarritoComponent } from './supermercado/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { FormularioComponent } from './casas/formulario/formulario.component';
     CasasComponent,
     FilterCasaPipe,
     DetalleComponent,
-    FormularioComponent
+    FormularioComponent,
+    SupermercadoComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,8 @@ import { FormularioComponent } from './casas/formulario/formulario.component';
   providers: [
     HttpClientModule,
     ServicioService,
-    CasasService
+    CasasService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
