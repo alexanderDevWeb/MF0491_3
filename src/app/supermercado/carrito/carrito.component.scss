@@ -1,19 +1,20 @@
 #carrito {
-  width: 500px;
-  max-height: 90vh;
-  overflow: auto;
-  background-color: #fff;
-  color: black;
-margin-bottom: 20px;
   position: absolute;
   right: 0;
   top: 50px;
-  font-family: "Roboto";
+  z-index: 1;
+  width: 500px;
+  max-height: 90vh;
+  color: black;
+  margin-bottom: 20px;
   border: 3px solid lightgrey;
+  background-color: #fff;
   -webkit-box-shadow: -4px 7px 26px 0px black;
   -moz-box-shadow: -4px 7px 26px 0px black;
   box-shadow: -4px 7px 26px 0px black;
-  z-index: 1;
+  font-family: "Roboto";
+  text-align: center;
+  overflow: auto;
   #listado {
     padding: 10px;
     border: 2px solid lightgrey;
@@ -39,7 +40,7 @@ margin-bottom: 20px;
         font-size: 0.8em;
         .linPrec {
           font-style: italic;
-          &.oferta{
+          &.oferta {
             color: rgb(221, 72, 72);
           }
         }
@@ -60,8 +61,14 @@ margin-bottom: 20px;
     height: 100px;
     background-color: lightgrey;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
+    span {
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
   }
   #botsCarrito {
     display: flex;

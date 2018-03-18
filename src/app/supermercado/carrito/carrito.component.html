@@ -1,34 +1,39 @@
 <div id="carrito">
   <div id="listado">
-    <h1 *ngIf="!carrito">El carrito está vacío!</h1>
-    <div class="item" *ngFor="let linea of carrito">
-      <span class="linFoto">
-        <img src="{{linea.producto.foto}}" alt="">
-      </span>
-      <span class="linPrecNomb">
+    <h1 *ngIf="!carrito.length">El carrito está vacío!</h1>
+    <div *ngFor="let linea of carrito;  let i = index">
+      <div class="item" *ngIf="linea">
+        <span class="linFoto">
+          <img src="{{linea.producto.foto}}" alt="">
+        </span>
+        <span class="linPrecNomb">
 
-        <!--         <span *ngIf="!linea.producto.oferta" class="linPrec">{{linea.producto.precio}}€</span>
-        <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(producto.precio - ((producto.precio * producto.porcentajeOferta) / 100))}}€</span>
-      </span>
- -->
-        <span *ngIf="!linea.producto.oferta" class="linPrec">{{linea.producto.precio}}€</span>
-        <!-- <span class="linPrec">{{linea.producto.precio}}€</span> -->
-        <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(linea.producto.precio - ((linea.producto.precio * linea.producto.porcentajeOferta) / 100)) | number : '1.2-2' }}€</span>
-        
-        <span class="linNomb">{{linea.producto.nombre}}</span>
-        <span class="linCAnt">{{linea.cantidad}}</span>
-      </span>
-      <span class="linDel">
-        <i class="glyphicon glyphicon-trash"></i>
-      </span>
+          <!--         <span *ngIf="!linea.producto.oferta" class="linPrec">{{linea.producto.precio}}€</span>
+          <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(producto.precio - ((producto.precio * producto.porcentajeOferta) / 100))}}€</span>
+        </span>
+   -->
+          <span *ngIf="!linea.producto.oferta" class="linPrec">{{linea.producto.precio}}€</span>
+          <!-- <span class="linPrec">{{linea.producto.precio}}€</span> -->
+          <span *ngIf="linea.producto.oferta" class="linPrec oferta">{{(linea.producto.precio - ((linea.producto.precio * linea.producto.porcentajeOferta) / 100)) | number : '1.2-2'
+            }}€</span>
+
+          <span class="linNomb">{{linea.producto.nombre}}</span>
+          <span class="linCAnt">{{linea.cantidad}}</span>
+        </span>
+        <span class="linDel" (click)="info(i)">
+          <i class="glyphicon glyphicon-trash"></i>
+        </span>
+      </div>
     </div>
   </div>
   <div id="totales">
-    <span>Total: {{total}}</span>
+    <span>Total Descuentos: {{totalDesc}}€</span>
+    <span>Total: {{total}}€</span>
   </div>
   <div id="botsCarrito">
     <div id="vacCarrito" (click)="vaciarCesta()">
-      <span>Vaciar Cesta </span><i class="glyphicon glyphicon-trash"></i>
+      <span>Vaciar Cesta </span>
+      <i class="glyphicon glyphicon-trash"></i>
     </div>
     <div id="tramitarCompra">
       Ver/Tramitar Compra

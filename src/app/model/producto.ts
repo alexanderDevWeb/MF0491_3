@@ -1,6 +1,7 @@
 /* Clase para encapsular los atributos de un producto */
 export class Producto {
   // Atributos
+  id: number;
   nombre: string;
   precio: number;
   precioBruto: string;
@@ -10,7 +11,7 @@ export class Producto {
 
   constructor() {
     console.log('Producto Constructor');
-
+    this.id = -1;
     this.nombre = 'Producto Nuevo';
     this.precio = 9.99;
     this.precioBruto = '10.00€ /Litro';

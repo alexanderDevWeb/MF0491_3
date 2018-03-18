@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Linea } from '../../model/linea';
+// import * as $ from 'jquery';
+declare var $: any;
+
 
 @Component({
   selector: 'app-carrito',
@@ -14,9 +17,15 @@ export class CarritoComponent implements OnInit {
   // Recibo el total, que ya viene calculado
   @Input('total') total: number;
 
+  // Recibo el total de descuento, que ya viene calculado
+  @Input('totalDesc') totalDesc: number;
+
   // Los parámetros de salida se realizan a traves de Eventos
   // Debo indicar que el usuario ha querido vaciar la cesta
   @Output('vaciar') vaciar = new EventEmitter();
+
+  // Posicion del array para eliminar producto
+  @Output('posicion') posicion = new EventEmitter();
 
   constructor() {
    }
@@ -30,5 +39,12 @@ export class CarritoComponent implements OnInit {
 
   }
 
+  info(i) {
+    console.log(`Eliminar posición ${i}`);
+    this.posicion.emit({'posicion': i});
+  }
+  /* $('.linDel').click( function() {
+    console.log('HOLA');
+  }) */
 
 }

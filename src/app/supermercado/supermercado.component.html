@@ -3,18 +3,18 @@
   <input [(ngModel)]="searchText" id="busqueda" type="text">
   <div id="resumen">
     <span  class="glyphicon glyphicon-shopping-cart"></span>
-    <span class="badge">{{carrito.length}}</span>
+    <span class="badge">{{cantCarrito}}</span>
     <span>{{total}}<span  class="glyphicon glyphicon-euro"></span></span>
 
     <span id="toggle" (click)="toggleCarrito()"><span class="glyphicon glyphicon-plus" ></span></span>
-    <app-carrito *ngIf="mostrar" [carrito]="carrito" [total]="total" (vaciar)="vaciarCarrito()"></app-carrito>
+    <app-carrito *ngIf="mostrar" [carrito]="carrito" [total]="total" [totalDesc]="totalDesc" (vaciar)="vaciarCarrito()" (posicion)="eliminarProducto($event)"></app-carrito>
   </div>
 </nav>
 
 <!-- Casa una d elas tarjetas -->
 <div class="dTarjeta" *ngFor="let producto of stock | filterProductos: searchText">
     <div *ngIf="producto.oferta" class="descuento">
-      {{producto.porcentajeOferta}} %
+      {{producto.porcentajeOferta}}%
     </div>
     <div class="iProducto">
       <img src="{{producto.foto}}" alt="">
